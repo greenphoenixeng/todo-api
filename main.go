@@ -1,12 +1,14 @@
 package main
+
 import (
         "fmt"
         "log"
         "net/http"
         "os"
 )
+
 func main() {
-        log.Print("starting server...")
+        log.Print("starting up server....")
         http.HandleFunc("/", handler)
         // Determine port for HTTP service.
         port := os.Getenv("PORT")
@@ -20,6 +22,7 @@ func main() {
                 log.Fatal(err)
         }
 }
+
 func handler(w http.ResponseWriter, r *http.Request) {
         name := os.Getenv("NAME")
         if name == "" {
