@@ -1,4 +1,4 @@
-name: 'Build & deploy to RC' #set whatever name you want to your github job
+name: Build & deploy to RC #set whatever name you want to your github job
 'on': pull_request  #set the events you would like to trigger this job
 jobs:
   build:
