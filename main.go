@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-        log.Print("starting up server....")
+        log.Print("starting up server...!")
         http.HandleFunc("/", handler)
         // Determine port for HTTP service.
         port := os.Getenv("PORT")
